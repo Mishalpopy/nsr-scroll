@@ -1,0 +1,28 @@
+.cloud {
+            overflow: hidden;
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%;
+            height: 0;
+            background-color: #f0f0f0; /* Background color for the container */
+        }
+        .cloud img {
+            width: 15%; /* Adjust the cloud image size as needed */
+            position: absolute;
+            bottom: 0; /* Start the cloud images from the bottom */
+            transform-origin: left center; /* Set the pivot point for the animation */
+            animation: animCloud 20s infinite linear;
+        }
+        @keyframes animCloud {
+            from {
+                transform: translateX(300%);
+            }
+            to {
+                transform: translateX(-100%) translateY(-50%); /* Move the cloud up and to the left */
+            }
+        }
+
+
+        position: absolute;
+        bottom: 247px;
+        left: 705px;
